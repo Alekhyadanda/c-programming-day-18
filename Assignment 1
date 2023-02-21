@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int n,remain,reversed=0,tempnum;
+    printf("Enter the number");
+    scanf("%d",&n);
+    tempnum=n;
+    while(n!=0)
+{
+    remain=n%10;
+    reversed=reversed*10+remain;
+    n/=10;
+}    
+    if(tempnum==reversed)
+    printf("It is a palindrome");
+    else
+    printf("Not a palindrome");
+}
